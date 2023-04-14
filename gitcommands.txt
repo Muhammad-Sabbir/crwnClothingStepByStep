@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 04: Capstone Project Intro Setup>> Lecture 78: Category Item Component"
+git commit -m "Chapter 04: Capstone Project Intro Setup>> Lecture 79: Directory Component"
 git push -u origin main
 
 
