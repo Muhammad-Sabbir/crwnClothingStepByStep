@@ -4,12 +4,34 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["plugin:react/jsx-runtime", "plugin:react/recommended", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    // "eslint:recommended",
+    "plugin:react/jsx-runtime", // important for jsx
+    "plugin:prettier/recommended"
+  ],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "plugins": ["react", "prettier"],
-  "rules": {}
+  "rules": {
+    "react/jsx-key": ["off", { "checkFragmentShorthand": "off" }],
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "spaced-comment": "off",
+    "no-console": "warn",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off", // need to check
+    // "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-unused-vars": "off"
+  }
 }
