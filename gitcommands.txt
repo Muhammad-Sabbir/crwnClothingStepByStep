@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 05: Routing ReactRouter>> Lecture 87: Styling for Navigation Logo"
+git commit -m "Chapter 06: Authentication Firebase>> Lecture 88: Setting Up Firebase"
 git push -u origin main
 
 
