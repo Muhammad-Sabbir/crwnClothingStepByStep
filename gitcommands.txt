@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 05: Routing ReactRouter>> Lecture 86: React Router Link"
+git commit -m "Chapter 05: Routing ReactRouter>> Lecture 87: Styling for Navigation Logo"
 git push -u origin main
 
 
