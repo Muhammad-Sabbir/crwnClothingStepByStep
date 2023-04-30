@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 06: Authentication Firebase>> Lecture 100: Generalizing Form Input Component"
+git commit -m "Chapter 06: Authentication Firebase>> Lecture 101: Custom Button Component"
 git push -u origin main
 
 
