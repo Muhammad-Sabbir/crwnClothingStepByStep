@@ -12,6 +12,8 @@ import {
   createUserDocumentFromAuth,
 } from '../../utils/firebase/firebase.utils';
 
+import SignUpForm from '../../components/sign-up-form/sign-up-form.component';
+
 // // //example 01: Hooks API Reference
 // const imperativeFunction = async () => {
 //   const response = await getRedirectResult(auth);
@@ -47,6 +49,7 @@ const SignIn = () => {
       {/*Example01: Hooks API Reference */}
       {/* <button onClick={signInWithGoogleRedirect}>Sign in with Google Redirect</button> */}
       {/*Example01: Hooks API Reference */}
+      <SignUpForm />
     </div>
   );
 };
