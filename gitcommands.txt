@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 06: Authentication Firebase>> Lecture 103: Finishing Authentication Page"
+git commit -m "Chapter 07: React Context For State Management>> Lecture 105: User Context"
 git push -u origin main
 
 
