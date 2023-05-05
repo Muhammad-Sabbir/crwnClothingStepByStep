@@ -26,6 +26,8 @@ const SignUpForm = () => {
   // console.log(formFields);
   // const val = useContext(UserContext); // If we initialized the context nevertheless, react will render this element though there is no value change here.
   console.log('hit');
+  const { setCurrentUser } = useContext(UserContext);
+
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
   };
@@ -44,6 +46,7 @@ const SignUpForm = () => {
       const { user } = await createAuthUserWithEmailAndPassword(email, password);
       // note: here displayName will not come from user Object, this will come from auth or google server
       //   console.log(user);
+      setCurrentUser(user);
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
     } catch (error) {

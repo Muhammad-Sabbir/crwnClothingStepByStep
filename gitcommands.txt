@@ -9,7 +9,7 @@ git push -u origin main
 
 
 git add --all
-git commit -m "Chapter 07: React Context For State Management>> Lecture 106: Rerendering From Context"
+git commit -m "Chapter 07: React Context For State Management>> Lecture 107: Signing Out"
 git push -u origin main
 
 
