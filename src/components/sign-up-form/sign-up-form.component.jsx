@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 import FormInput from '../form-input/form-input.component';
 
@@ -8,6 +8,8 @@ import {
 } from '../../utils/firebase/firebase.utils';
 
 import Button from '../button/button.component';
+
+import { UserContext } from '../../contexts/user.context';
 
 import './sign-up-form.styles.scss';
 
@@ -21,8 +23,9 @@ const defaultFormFields = {
 const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
-  console.log(formFields);
-
+  // console.log(formFields);
+  // const val = useContext(UserContext); // If we initialized the context nevertheless, react will render this element though there is no value change here.
+  console.log('hit');
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
   };
@@ -56,29 +59,6 @@ const SignUpForm = () => {
     const { name, value } = event.target;
     setFormFields({ ...formFields, [name]: value });
   };
-
-  //   return (
-  //     <div>
-  //       <h1>Sign up with your email and password</h1>
-  //       <form action='' onSubmit={handleSubmit}>
-  //         {/* Another example to create input element. */}
-
-  //         <FormInput
-  //           label='Display Name'
-  //           inputOptions={{
-  //             type: 'text',
-  //             required: true,
-  //             onChange: handleChange,
-  //             name: 'Display Name',
-  //             value: displayName,
-  //           }}
-  //         />
-
-  //         {/* now commentout the return of below go to the form-input.component.jsx file and change there. example 02 */}
-  //         <button type='submit onSubmit={()=>{}}'>Sign Up</button>
-  //       </form>
-  //     </div>
-  //   );
 
   return (
     <div className='sign-up-container'>
